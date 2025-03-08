@@ -1,0 +1,279 @@
+@import "../depends/fontawesome-6.2.1/css/all.min.css";
+@import "../images/unsplash/jr-korpa_NDUjrvZKMeE/background.css";
+
+@media (max-width: 512px) {
+	body header > div > div, body > header > div > nav {
+		width: 100%;
+		margin: 0;
+		float: none;
+		text-align: center;
+	}
+	body > header > div > div {
+		margin-bottom: 10px;
+	}
+	html > body[data-is-post] > div.container {
+		padding-top: 75px !important;
+	}
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+body, .container {
+	transition: background-color ease .1s;
+}
+body {
+	height: 100vh;
+	box-sizing: border-box;
+	background-color: #f8f8ff;
+	color: #232323;
+	font-family: "Allerta Stencil", system-ui, sans-serif;
+
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.container {
+	overflow: visible;
+	min-height: 100%;
+	height: auto;
+	width: 100%;
+	background-color: rgba(255,255,255,0.75);
+
+	-webkit-backdrop-filter: blur(8px);
+	backdrop-filter: blur(8px);
+
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	-webkit-box-align: center;
+	align-items: center;
+
+	-webkit-justify-content: center;
+    -moz-box-pack: center;
+    -webkit-box-pack: center;
+	justify-content: center;
+
+	display: -webkit-box;  /* 老版本语法: Safari 3.1-6,  iOS 6-, Android browser, older WebKit browsers.  */
+	display: -moz-box;    /* 老版本语法: Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;  /* 混合版本语法: IE 10 */
+	display: -webkit-flex;  /* 新版本语法： Chrome 21+ */
+	display: flex;       /* 新版本语法： Opera 12.1, Firefox 22+ */
+}
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+
+	font-family: "Outfit", system-ui, sans-serif;
+	z-index: 1000;
+	backdrop-filter: blur(15px);
+	background-color: rgba(0,0,0,0.75);
+	color: #ffffff;
+
+	border-bottom-style: solid;
+	border-bottom-color: #808080;
+	border-bottom-width: 1px;
+}
+header > div:not(.FlyingPageProcessorContainer) {
+	width: 100%;
+	padding: 15px 0;
+	display: inline-block;
+}
+header > div.FlyingPageProcessorContainer {
+	margin-top: -6px;
+}
+
+div.FlyingPageProcessorContainer { /* FlyingPage Processor */
+	width: 100%;
+	height: 2px;
+	display: block;
+	text-align: center;
+}
+div.FlyingPageProcessor { /* FlyingPage Processor */
+	transition: width 0.3s ease;
+	height: 2px;
+	width: 0;
+	margin: 0 auto;
+	background-color: #f8f8ff;
+	float: none;
+}
+header > div a:link, header > div a:visited  {
+	border-bottom-color: #ffffff;
+	color: #ffffff !important;
+}
+header > div > div {
+	margin-left: 20px;
+	width: 25%;
+	float: left;
+}
+header > div nav ul {
+	margin: 0;
+	float: revert;
+	padding: 0;
+}
+header > div nav {
+	margin: 0 20px 0 0;
+	float: right;
+	padding: 0;
+}
+header > div nav ul li {
+	display: inline-block;
+	margin-left: 10px;
+}
+header > div nav ul li i {
+	margin-right: 5px;
+	display: inline-block;
+	font-weight: 900;
+	font-family: "Font Awesome 6 Free", sans-serif;
+	content: "\f0c1";
+}
+header > div nav ul li:hover i {
+	animation: NavLinkHover 0.65s ease;
+}
+@keyframes NavLinkHover {
+	100%, 0% {
+		transform: rotate(0deg);
+	}
+	33% {
+		transform: rotate(15deg);
+	}
+	66% {
+		transform: rotate(-15deg);
+	}
+}
+
+
+.DarkModeSwitcher {
+	user-select: none;
+	transition: background-color ease 0.3s;
+	cursor: pointer;
+	border-radius: 15px;
+	padding: 2px 5px;
+}
+.DarkModeSwitcher:hover {
+	background-color: rgba(255,255,255,0.3);
+}
+
+
+
+
+h3, h4, h5, h6 {
+	font-weight: normal;
+}
+.copyright {
+	font-size: smaller;
+	text-align: center;
+}
+.center {
+	text-align: center;
+	max-width: 85%;
+	margin: 0 auto;
+	animation: FadeIn 0.65s ease;
+}
+@keyframes FadeIn {
+	0%, 20% {
+		opacity: 0;
+		transform: scale(1.15);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+a:link, a:visited  {
+    color: #232323 !important;
+    text-decoration: none;
+    border-bottom-color: #232323;
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+}
+a:link:hover, a:visited:hover {
+    border-bottom-style: solid;
+}
+
+input, button {
+	margin: 10px 0;
+	border: none;
+	border-radius: 15em;
+	padding: 15px;
+}
+button {
+	transition: color,background-color ease-out 0.25s;
+}
+button:active {
+	transform: scale(.95);
+}
+button:hover {
+	background-color: #28292a;
+	color: #ffffff;
+}
+
+::selection {
+	background-color: #1f1f1f;
+	color: #f8f8ff;
+}
+
+
+::-webkit-scrollbar-thumb {
+	background-color: #232323;
+	border-color: #f8f8ff;/* matching ::-webkit-scrollbar background */
+
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 3px;
+	box-sizing: border-box;
+}
+::-webkit-scrollbar {
+	background-color: #f8f8ff;
+	width: 10px;
+	height: 10px;
+}
+
+
+/* is post */
+body[data-is-post] > div.container {
+	padding-top: 50px;
+}
+body[data-is-post] div.center > div {
+	padding: 0 0 50px 0;
+	text-align: left;
+}
+
+/* is Night mode on */
+body[theme=Night] a:link, body[theme=Night] a:visited  {
+	border-bottom-color: #ffffff;
+}
+body[theme=Night], body[theme=Night] a:link, body[theme=Night] a:visited {
+	color: #ffffff !important;
+}
+body[theme=Night] {
+	background-color: #1f1f1f;
+}
+body[theme=Night] .container {
+	background-color: rgba(0,0,0,0.75);
+}
+
+body[theme=Night] div#left > div {
+	background-color: #1f1f1f;
+}
+body[theme=Night] input {
+	background-color: #28292a;
+	caret-color: #ffffff;
+	color: #ffffff;
+}
+
+body[theme=Night] ::selection {
+	background-color: #ffa8a8;
+	color: #1f1f1f;
+}
+body[theme=Night] ::-webkit-scrollbar-thumb {
+	background-color: #f8f8ff;
+	border-color: #1f1f1f;/* matching ::-webkit-scrollbar background */
+}
+body[theme=Night] ::-webkit-scrollbar {
+	background-color: #1f1f1f;
+}
+

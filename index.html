@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./static/css/main.css">
+        <link href="./static/images/icon.jpg" rel="icon">
+        <title>koto's Site</title>
+        <script src="static/js/PreferDarkCSS.js"></script>
+        <script src="static/js/FlyingPage.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <header>
+        <div>
+            <div id="SiteRoot"><a href="/">Koto's Site</a></div>
+            <nav><ul>
+                <li>
+                    <a href="https://github.com/kobe-koto/koto-cc-v2">
+                        <i class="fa-brands fa-github"></i>
+                        Source Code
+                    </a>
+                </li>
+                <li>
+                    <a href="./about.html">
+                        <i class="fa-solid fa-link"></i>
+                        About
+                    </a>
+                </li>
+                <li class="DarkModeSwitcher" onclick="SwitchTheme()">
+                    <a>
+                        <i class="fa-solid fa-sun"></i>
+                        <i class="fa-solid fa-moon" style="display: none;"></i>
+                    </a>
+                    <a>Light</a>
+                </li>
+            </ul></nav>
+        </div>
+    </header>
+    <div class="container">
+        <div>
+            <div>
+                <div class="flex-container">
+                    <div>
+                        <div class="left">
+                            <h3>👋Hey!</h3>
+                            <p>I'm kobe-koto/Puca.</p>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <div class="right">
+                            <img src="./static/images/icon.jpg" alt="" class="icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="links-container">
+                <div class="links">
+                    <p style="font-size: larger">Social Links</p>
+                    <span onclick="window.open('https://github.com/kobe-koto')"><i class="fa-brands fa-github"></i></span>
+                    <span onclick="window.open('https://twitter.com/kobe_koto')"><i class="fa-brands fa-twitter"></i></span>
+                    <p class="copyright">
+                        Copyright&nbsp;<i class="fa-solid fa-copyright"></i>&nbsp;kobe-koto |
+                        Under&nbsp;<i class="fa-solid fa-stamp"></i>&nbsp;AGPL-3.0 |
+                        Open&nbsp;Source&nbsp;on&nbsp;<a href="https://github.com/kobe-koto/koto-cc-v2"><i class="fa-brands fa-github"></i>&nbsp;Github</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./static/images/icon.jpg" rel="icon">
+		<link rel="stylesheet" href="./static/css/basic.css">
+		<link rel="stylesheet" href="./static/depends/fontawesome-6.2.1/css/all.min.css">
+		<script src="./static/js/CheckDeploy.js"></script>
+		<script src="static/js/PreferDarkCSS.js"></script>
+		<script src="static/js/FlyingPage.js"></script>
+        <title>404 - koto's Site</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div>
+				<div id="SiteRoot"><a href="/">Koto's Site</a></div>
+				<nav><ul>
+					<li>
+						<a href="https://github.com/kobe-koto/koto-cc-v2">
+							<i class="fa-brands fa-github"></i>
+							Source Code
+						</a>
+					</li>
+					<li>
+						<a href="./about.html">
+							<i class="fa-solid fa-link"></i>
+							About
+						</a>
+					</li>
+					<li class="DarkModeSwitcher" onclick="SwitchTheme()">
+						<a>
+							<i class="fa-solid fa-sun"></i>
+							<i class="fa-solid fa-moon" style="display: none;"></i>
+						</a>
+						<a>Light</a>
+					</li>
+				</ul></nav>
+			</div>
+		</header>
+		<div class="container">
+			<div class="center">
+				<h1>😰 Not Found</h1>
+				<h2>请求的文件在此站点上不存在.</h2>
+				<h3>如果您在此网站的 GitHub 仓库发现它确实存在且正在部署, 请等待 GitHub Action 部署完成后加以 Hard Reload.</h3>
+				<p class="copyright">
+					Copyright&nbsp;<i class="fa-solid fa-copyright"></i>&nbsp;kobe-koto |
+					Under&nbsp;<i class="fa-solid fa-stamp"></i>&nbsp;AGPL-3.0 |
+					Open&nbsp;Source&nbsp;on&nbsp;<a href="https://github.com/kobe-koto/koto-cc-v2"><i class="fa-brands fa-github"></i>&nbsp;Github</a>
+				</p>
+			</div>
+		</div>
+	</body>
+	<script>CheckDeployment()</script>
+</html>
